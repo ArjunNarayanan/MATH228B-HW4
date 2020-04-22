@@ -7,7 +7,7 @@ u = fempoi(p,t,e);
 
 subplot(2,2,1);
 trisurf(t,p(:,1),p(:,2),u);
-view([0,0,-1]);
+view(
 
 % % Circle, all Dirichlet
 n = 32; phi = 2*pi*(0:n)'/n;
@@ -17,7 +17,7 @@ u = fempoi(p,t,e);
 % 
 subplot(2,2,2);
 trisurf(t,p(:,1),p(:,2),u);
-view([0,0,-1]);
+
 % Generic polygon geometry, mixed Dirichlet/Neumann
 x = (0:.1:1)';
 y = 0.1 * cos(10*pi*x);
@@ -28,4 +28,4 @@ u = fempoi(p,t,e);
 % 
 subplot(2,2,3);
 trisurf(t,p(:,1),p(:,2),u);
-view([0,0,-1]);
+
