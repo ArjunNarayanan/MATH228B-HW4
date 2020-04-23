@@ -7,7 +7,7 @@ op(1:4,1:4) = op(1:4,1:4) + emat;
 op(3:6,3:6) = op(3:6,3:6) + emat;
 % Apply boundary conditions:
 op(1,:) = 0;
-op(:,1) = 0;s
+op(:,1) = 0;
 op(1,1) = 1;
 op(2,:) = 0;
 op(:,2) = 0;
